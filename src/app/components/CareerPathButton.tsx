@@ -4,9 +4,9 @@ import { useRouter } from "next/navigation";
 
 interface CareerPathButtonProps {
   text: string;
-}
+  link: string}
 
-const CareerPathButton: React.FC<CareerPathButtonProps> = ({ text }) => {
+const CareerPathButton: React.FC<CareerPathButtonProps> = ({ text , link  }) => {
   const router = useRouter();
 
   return (
@@ -17,7 +17,7 @@ const CareerPathButton: React.FC<CareerPathButtonProps> = ({ text }) => {
       {/* Button */}
       <button
         type="button"
-        onClick={() => router.push("/service")}
+        onClick={() => router.push(link)}
         className="relative z-10 bg-white border border-black rounded-md cursor-pointer px-8 py-4 font-bold text-2xl"
       >
         {text}

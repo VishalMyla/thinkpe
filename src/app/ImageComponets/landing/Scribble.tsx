@@ -3,8 +3,8 @@ import * as React from "react";
 const Scribble: React.FC<React.SVGProps<SVGElement>> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="250"
-    height="30"
+    width="15.625rem"
+    height="1.85rem"
     fill="none"
     viewBox="0 0 459 61"
   >

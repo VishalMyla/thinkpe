@@ -16,25 +16,25 @@ const MovingBoxes = () => {
         <h1 className="text-4xl font-bold mb-12 text-center">Two as live, others as coming soon...</h1>
       </div>
      
-      <div>
+      <div className='flex flex-col items-center justify-center w-2/3'>
           {[1, 2].map((line) => (
-            <div key={line} className="w-full max-w-[500px] overflow-hidden my-4">
-              <motion.div
-                className="flex gap-5 w-[1000px]"
-                animate={{ x: [0, -500] }}
-                transition={{ repeat: Infinity, duration: 6, ease: 'linear' }}
-              >
-                {[...boxes, ...boxes].map((box, index) => (
-                  <div
-                    key={index}
-                    className="flex items-center justify-center w-48 h-20 px-6 rounded-xl text-white font-semibold text-center shadow-md"
-                    style={{ background: box.gradient }}
-                  >
-                    {box.title}
-                  </div>
-                ))}
-              </motion.div>
-            </div>
+            <div key={line} className="w-full overflow-hidden my-4">
+            <motion.div
+              className="flex gap-5 w-max"
+              animate={{ x: ["0%", "-50%"] }}
+              transition={{ repeat: Infinity, duration: 6, ease: "linear" }}
+            >
+              {[...boxes, ...boxes].map((box, index) => (
+                <div
+                  key={index}
+                  className="flex items-center justify-center w-48 h-20 px-6 rounded-xl text-white font-semibold text-center shadow-md"
+                  style={{ background: box.gradient }}
+                >
+                  {box.title}
+                </div>
+              ))}
+            </motion.div>
+          </div>
           ))}
       </div>
     </div>

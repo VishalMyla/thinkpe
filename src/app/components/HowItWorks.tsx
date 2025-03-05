@@ -1,13 +1,17 @@
 import Knowyourself from "../ImageComponets/landing/section3/Knowyourself";
+import CareerPathButton from "./CareerPathButton";
 
 const HowItWorks = () => {
   return (
-    <div className="w-full flex flex-col justify-center bg-white py-16 ">
+    <div className="w-full flex flex-col justify-center bg-white py-16 gap-24">
       {/* Header section */}
-      <h1 className="text-4xl font-bold text-center mb-4">How it works</h1>
-      <p className="text-center mb-16 max-w-2xl mx-auto">
+      <div >
+      <h1 className="text-4xl font-bold text-center m-4">How it works</h1>
+      <p className="text-center mb-16 mt-6 max-w-2xl mx-auto">
         Mobile banking differs from mobile payments, which involves the use of a mobile device
       </p>
+      </div>
+      
 
       {/* Journey path with steps - using container with padding */}
       <div className="relative w-full max-w-6xl mx-auto px-8">
@@ -155,6 +159,9 @@ const HowItWorks = () => {
           </div>
           <div className="w-1/2"></div>
         </div>
+      </div>
+      <div className="flex justify-center items-center">
+        <CareerPathButton text="Start My Personalized Path Today" link="/pathway" />
       </div>
     </div>
   );

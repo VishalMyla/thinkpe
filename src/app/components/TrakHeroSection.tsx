@@ -3,6 +3,8 @@ import CareerPathButton from './CareerPathButton';
 import Scribble from '../ImageComponets/landing/Scribble';
 import Image from 'next/image';
 
+
+
 const TrakHeroSection = () => {
   const [pathsLoaded, setPathsLoaded] = useState(false);
   const svgContainerRef = useRef(null);
@@ -111,25 +113,42 @@ const TrakHeroSection = () => {
       >
         right path
       </span>
-      <Scribble />
+      <Scribble/>
     </span>
     {'\t'}, every {'\n'}
     step of the way.
   </h1>
 </div>
       <div className='flex flex-row'>
-        <div>
+        <div className='w-3/5'>
               <p className="text-lg max-w-xl mb-8">
               AI-Powered Personalized Pathways with Exciting Milestones to Turn Your Dreams into Reality.
             </p>
             
             {/* CTA Button */}
-            <CareerPathButton  text='Explore My Career Path with Trak'/>
+            <CareerPathButton  text='Explore My Career Path with Trak' link='/ServiseNotAvailable'/>
         </div>
 
 
-        <div>
-          
+        <div className='w-100 h-100 bg-black'>
+            <Image
+          src="/assets/arcs/1.png"
+          width={110} height={20}
+          alt="Picture of the author"
+        />
+              <Image
+              src="/assets/arcs/2.png"
+              width={20} height={80}
+              alt='curve'/>
+              <Image
+            src="/assets/arcs/3.png"
+            width={18} height={18}
+              alt='curve'/>
+              <Image
+              src="/assets/arcs/4.png"
+              width={20} height={60}
+              alt='curve'
+              />
         </div>
         
       </div>

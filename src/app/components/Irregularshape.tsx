@@ -5,11 +5,11 @@ const Irregularshape = () => {
   return (
     <div className="relative flex items-center justify-center min-h-screen bg-gray-900">
       {/* SVG Background Shape */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <Image src="/assets/arcs/1.svg" alt="Edge 1" width={200} height={200} className="absolute top-0 left-0" />
-        <Image src="/assets/arcs/2.svg" alt="Edge 2" width={200} height={200} className="absolute top-0 right-0" />
-        <Image src="/assets/arcs/3.svg" alt="Edge 3" width={200} height={200} className="absolute bottom-0 left-0" />
-        <Image src="/assets/arcs/4.png" alt="Edge 4" width={200} height={200} className="absolute bottom-0 right-0" />
+      <div className=" inset-0 flex items-center justify-center">
+        <Image src="/assets/arcs/1.png" alt="Edge 1" width={110} height={20} className="absolute top-0 left-0" />
+        <Image src="/assets/arcs/2.png" alt="Edge 2" width={20} height={80} className="absolute top-0 right-0" />
+        <Image src="/assets/arcs/3.png" alt="Edge 3" width={18} height={18} className="absolute bottom-0 left-0" />
+        <Image src="/assets/arcs/4.png" alt="Edge 4" width={20} height={60} className="absolute bottom-0 right-0" />
       </div>
 
       {/* Animated Texts */}

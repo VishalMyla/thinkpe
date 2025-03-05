@@ -12,7 +12,7 @@ import AboutUs from './components/AboutUs';
 import TrakLandingPage from './components/TrakLandingPage';
 import MovingBoxes from './components/MovingBoxes';
 import HeaderL from './components/HeaderL';
-import Irregularshape from './components/Irregularshape';
+
 
 export default function Home() { 
   

@@ -122,7 +122,7 @@ const ServiceNotFound = () => {
                   ✨ Want to be the first to know when we launch in your area? 
 =  
                   </p>
-               <CareerPathButton text="👉 Sign Up for Early Access"/>
+               <CareerPathButton text="👉 Sign Up for Early Access" link="/"/>
                 </main>
               )}
         </div>

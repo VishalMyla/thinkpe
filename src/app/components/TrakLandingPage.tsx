@@ -14,11 +14,11 @@ const TrakLandingPage: React.FC = () => {
       <main className="flex-1 flex items-center justify-center px-4 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-            Your dream career isn't a faraway
+            Your dream career isn&apos;t a faraway
             <span className="inline-block bg-white text-black px-4 py-1 rounded-md mx-2 -rotate-5">
               <p className='-rotate-4'>destination</p>
             </span>
-            it's a journey. Trak makes sure you're on the right path, every
+            it's a journey. Trak makes sure you&apos;re on the right path, every
             <span className="inline-block bg-white text-black px-6 py-1 rounded-md mx-2 rotate-10">
             <p className='rotate-8'>step</p>
             </span>

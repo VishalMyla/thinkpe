@@ -1,4 +1,4 @@
-import React, { useEffect, useRef , useState } from 'react';
+// import React, { useEffect, useRef , useState } from 'react';
 import CareerPathButton from './CareerPathButton';
 import Scribble from '../ImageComponets/landing/Scribble';
 import Image from 'next/image';
@@ -6,79 +6,79 @@ import Image from 'next/image';
 
 
 const TrakHeroSection = () => {
-  const [pathsLoaded, setPathsLoaded] = useState(false);
-  const svgContainerRef = useRef(null);
+  // const [pathsLoaded, setPathsLoaded] = useState(false);
+  // const svgContainerRef = useRef(null);
   
-  useEffect(() => {
-    // Function to create path data from SVGs and initialize animation
-    const initializePathAnimation = () => {
-      // Get references to all path elements
-      const pathElements = document.querySelectorAll('.path-element');
-      if (!pathElements.length) return;
+  // useEffect(() => {
+  //   // Function to create path data from SVGs and initialize animation
+  //   const initializePathAnimation = () => {
+  //     // Get references to all path elements
+  //     const pathElements = document.querySelectorAll('.path-element');
+  //     if (!pathElements.length) return;
       
-      // Calculate path lengths for animation
-      const pathLengths = Array.from(pathElements).map(path => path.getTotalLength());
-      const totalPathLength = pathLengths.reduce((sum, length) => sum + length, 0);
+  //     // Calculate path lengths for animation
+  //     const pathLengths = Array.from(pathElements).map(path => path.getTotalLength());
+  //     const totalPathLength = pathLengths.reduce((sum, length) => sum + length, 0);
       
-      // Get text elements to animate
-      const textElements = document.querySelectorAll('.path-text');
-      let progress = 0;
+  //     // Get text elements to animate
+  //     const textElements = document.querySelectorAll('.path-text');
+  //     let progress = 0;
       
-      // Animation function
-      const animate = () => {
-        textElements.forEach((item, index) => {
-          // Distribute items around the path with even spacing
-          const itemSpacing = totalPathLength / textElements.length;
-          const itemOffset = (index * itemSpacing) % totalPathLength;
-          let itemPosition = (progress + itemOffset) % totalPathLength;
+  //     // Animation function
+  //     const animate = () => {
+  //       textElements.forEach((item, index) => {
+  //         // Distribute items around the path with even spacing
+  //         const itemSpacing = totalPathLength / textElements.length;
+  //         const itemOffset = (index * itemSpacing) % totalPathLength;
+  //         let itemPosition = (progress + itemOffset) % totalPathLength;
           
-          // Determine which path segment this position falls on
-          let pathIndex = 0;
-          let accumulatedLength = 0;
+  //         // Determine which path segment this position falls on
+  //         let pathIndex = 0;
+  //         let accumulatedLength = 0;
           
-          while (pathIndex < pathLengths.length) {
-            if (itemPosition < accumulatedLength + pathLengths[pathIndex]) {
-              // Found the right path segment
-              const positionOnPath = itemPosition - accumulatedLength;
-              const point = pathElements[pathIndex].getPointAtLength(positionOnPath);
+  //         while (pathIndex < pathLengths.length) {
+  //           if (itemPosition < accumulatedLength + pathLengths[pathIndex]) {
+  //             // Found the right path segment
+  //             const positionOnPath = itemPosition - accumulatedLength;
+  //             const point = pathElements[pathIndex].getPointAtLength(positionOnPath);
               
-              // Apply transformation to position the text element
-              item.style.transform = `translate(${point.x}px, ${point.y}px)`;
-              break;
-            }
+  //             // Apply transformation to position the text element
+  //             item.style.transform = `translate(${point.x}px, ${point.y}px)`;
+  //             break;
+  //           }
             
-            accumulatedLength += pathLengths[pathIndex];
-            pathIndex++;
+  //           accumulatedLength += pathLengths[pathIndex];
+  //           pathIndex++;
             
-            // If we've gone past all paths, use the last path
-            if (pathIndex >= pathLengths.length) {
-              pathIndex = pathLengths.length - 1;
-              const point = pathElements[pathIndex].getPointAtLength(pathLengths[pathIndex]);
-              item.style.transform = `translate(${point.x}px, ${point.y}px)`;
-            }
-          }
-        });
+  //           // If we've gone past all paths, use the last path
+  //           if (pathIndex >= pathLengths.length) {
+  //             pathIndex = pathLengths.length - 1;
+  //             const point = pathElements[pathIndex].getPointAtLength(pathLengths[pathIndex]);
+  //             item.style.transform = `translate(${point.x}px, ${point.y}px)`;
+  //           }
+  //         }
+  //       });
         
-        // Increment progress for next animation frame
-        progress = (progress + 0.5) % totalPathLength;
-        requestAnimationFrame(animate);
-      };
+  //       // Increment progress for next animation frame
+  //       progress = (progress + 0.5) % totalPathLength;
+  //       requestAnimationFrame(animate);
+  //     };
       
-      // Start the animation
-      animate();
-    };
+  //     // Start the animation
+  //     animate();
+  //   };
     
-    // Wait for SVGs to be loaded in the DOM
-    if (pathsLoaded && svgContainerRef.current) {
-      // Small delay to ensure all SVGs are fully loaded
-      setTimeout(initializePathAnimation, 100);
-    }
-  }, [pathsLoaded]);
+  //   // Wait for SVGs to be loaded in the DOM
+  //   if (pathsLoaded && svgContainerRef.current) {
+  //     // Small delay to ensure all SVGs are fully loaded
+  //     setTimeout(initializePathAnimation, 100);
+  //   }
+  // }, [pathsLoaded]);
   
-  // Set paths as loaded when component mounts
-  useEffect(() => {
-    setPathsLoaded(true);
-  }, []);
+  // // Set paths as loaded when component mounts
+  // useEffect(() => {
+  //   setPathsLoaded(true);
+  // }, []);
   
   return (
     <div className="relative w-full flex flex-col gap-16 min-h-screen bg-white overflow-hidden px-12 py-12 mt-4">

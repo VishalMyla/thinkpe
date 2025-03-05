@@ -58,7 +58,7 @@ const HowItWorks = () => {
               <div>
                 <p className="mb-4">
                   A roadmap designed just for you. Once we know where you are and where you want to go, 
-                  Trak creates a dynamic, personalized pathway. This isn't a static plan – it evolves with you.
+                  Trak creates a dynamic, personalized pathway. This isn&apos;t a static plan – it evolves with you.
                 </p>
                 <ul className="list-disc pl-6">
                   <li>
@@ -113,7 +113,7 @@ const HowItWorks = () => {
               <div>
                 <p className="mb-4">
                   A roadmap designed just for you. Once we know where you are and where you want to go, 
-                  Trak creates a dynamic, personalized pathway. This isn't a static plan – it evolves with you.
+                  Trak creates a dynamic, personalized pathway. This isn&apos;t a static plan – it evolves with you.
                 </p>
                 <ul className="list-disc pl-6">
                   <li>

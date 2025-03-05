@@ -98,7 +98,7 @@ const StatusSelection: React.FC = () => {
   return (
     <div className="min-h-screen bg-white flex items-center justify-center p-4">
       <div className="container mx-auto">
-        <h1 className="text-4xl font-normal text-center mb-12">What's your status?</h1>
+        <h1 className="text-4xl font-normal text-center mb-12">What&apos;s your status?</h1>
         <div className="flex flex-row items-center justify-center gap-16">
           {statusOptions.map((status, index) => (
            

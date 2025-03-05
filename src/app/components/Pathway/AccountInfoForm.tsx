@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import Image from 'next/image';
 import Stepper from './Stepper';
 
 interface AccountInfoFormProps {
   onContinue?: (formData: FormData) => void;
 }
 
-const AccountInfoForm: React.FC<AccountInfoFormProps> = ({ onContinue }) => {
+const AccountInfoForm: React.FC<AccountInfoFormProps> = () => {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -26,14 +25,14 @@ const AccountInfoForm: React.FC<AccountInfoFormProps> = ({ onContinue }) => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    onContinue && onContinue(formData as unknown as FormData);
-  };
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   onContinue && onContinue(formData as unknown as FormData);
+  // };
 
   return (
     <div className="min-h-screen bg-white flex flex-col items-center justify-center gap-6 p-4">
-      <h1 className="text-4xl font-semibold text-center mb-8">Let's get you more</h1>
+      <h1 className="text-4xl font-semibold text-center mb-8">Let&apos;s get you more</h1>
       <div>
 
       </div>
@@ -174,7 +173,7 @@ const AccountInfoForm: React.FC<AccountInfoFormProps> = ({ onContinue }) => {
                           </div>
 
                           <button 
-                            onClick={handleSubmit}
+                            
                             className="w-full bg-white border-1 border-black text-black py-3 rounded-md hover:bg-blue-600 hover:border-blue-600 hover:text-white transition duration-300"
                           >
                             Continue

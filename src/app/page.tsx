@@ -22,7 +22,7 @@ export default function Home() {
     <HeaderL/>
 
     <TrakHeroSection />
-    <Irregularshape/>
+  
     <MovingBoxes/>
     <HowItWorks/>
    <FAQSection/>

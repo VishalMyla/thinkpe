@@ -31,7 +31,7 @@ export default function HeaderL() {
 
         {/* Try Us Button */}
         <div>
-          <Link href="/try-us" className="relative inline-block">
+          <Link href="/" className="relative inline-block">
             <div className="absolute inset-0 bg-black rounded-lg translate-x-1 translate-y-1"></div>
             <div className="relative bg-white text-black font-medium py-2 px-6 border border-black rounded-lg">
               Try Us

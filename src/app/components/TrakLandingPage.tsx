@@ -18,7 +18,7 @@ const TrakLandingPage: React.FC = () => {
             <span className="inline-block bg-white text-black px-4 py-1 rounded-md mx-2 -rotate-5">
               <p className='-rotate-4'>destination</p>
             </span>
-            it's a journey. Trak makes sure you&apos;re on the right path, every
+            it&apos;s a journey. Trak makes sure you&apos;re on the right path, every
             <span className="inline-block bg-white text-black px-6 py-1 rounded-md mx-2 rotate-10">
             <p className='rotate-8'>step</p>
             </span>

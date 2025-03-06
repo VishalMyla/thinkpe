@@ -130,26 +130,7 @@ const TrakHeroSection = () => {
         </div>
 
 
-        <div className='w-100 h-100 bg-black'>
-            <Image
-          src="/assets/arcs/1.png"
-          width={110} height={20}
-          alt="Picture of the author"
-        />
-              <Image
-              src="/assets/arcs/2.png"
-              width={20} height={80}
-              alt='curve'/>
-              <Image
-            src="/assets/arcs/3.png"
-            width={18} height={18}
-              alt='curve'/>
-              <Image
-              src="/assets/arcs/4.png"
-              width={20} height={60}
-              alt='curve'
-              />
-        </div>
+      
         
       </div>
       

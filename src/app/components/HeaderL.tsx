@@ -20,7 +20,7 @@ export default function HeaderL() {
           {/* Logo */}
           <Link href="/" className="ml-4">
             <Image
-              src="/Assets/logo.svg"
+              src="/assets/logo.svg"
               alt="TRAK Logo"
               width={194.53}
               height={50.21}

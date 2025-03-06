@@ -6,7 +6,7 @@ import { useState } from "react";
 export default function HeaderL() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <header>
+    <header className='w-full'>
     <div className="w-full py-8 px-12 flex justify-between items-center relative">
         <div className="flex items-center">
           {/* Hamburger Button */}

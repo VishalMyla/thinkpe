@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Stepper from './Stepper';
 
-interface AccountInfoFormProps {
-  onContinue?: (formData: FormData) => void;
-}
+// interface AccountInfoFormProps {
+//   onContinue?: (formData: FormData) => void;
+// }
 
-const AccountInfoForm: React.FC<AccountInfoFormProps> = () => {
+const AccountInfoForm: React.FC<{ onContinue: () => void }> = ({ onContinue }) => {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -31,11 +31,11 @@ const AccountInfoForm: React.FC<AccountInfoFormProps> = () => {
   // };
 
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center justify-center gap-6 p-4">
-      <h1 className="text-4xl font-semibold text-center mb-8">Let&apos;s get you more</h1>
-      <div>
+    <div className="min-h-screen bg-white flex flex-col items-center justify-around p-4">
+      <h1 className="text-4xl font-semibold text-center ">Let&apos;s get you more</h1>
+      {/* <div>
 
-      </div>
+      </div> */}
       <div className='flex justify-center items-center'>
              <div className="w-full gap-24 flex flex-row-reverse ">
 
@@ -173,8 +173,8 @@ const AccountInfoForm: React.FC<AccountInfoFormProps> = () => {
                           </div>
 
                           <button 
-                            
-                            className="w-full bg-white border-1 border-black text-black py-3 rounded-md hover:bg-blue-600 hover:border-blue-600 hover:text-white transition duration-300"
+                            onClick={onContinue}
+                            className="w-full bg-white border-1 border-black text-black py-3 rounded-md hover:bg-[#4A3AFF] hover:border-[#4A3AFF] hover:text-white transition duration-300"
                           >
                             Continue
                           </button>

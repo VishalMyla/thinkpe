@@ -54,7 +54,7 @@ const AboutUs: React.FC = () => {
           {/* Map Image */}
           <div className="mt-6 rounded-lg overflow-hidden ">
             <Image 
-              src="/Assets/map.png" 
+              src="/assets/map.png" 
               alt="Location map showing Jaipur, Rajasthan" 
               width={600} 
               height={300}

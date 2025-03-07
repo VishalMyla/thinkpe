@@ -1,7 +1,7 @@
 // import React, { useEffect, useRef , useState } from 'react';
 import CareerPathButton from './CareerPathButton';
 import Scribble from '../ImageComponets/landing/Scribble';
-import Image from 'next/image';
+;
 
 
 

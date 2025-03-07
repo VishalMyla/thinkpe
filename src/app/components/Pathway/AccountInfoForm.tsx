@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import Stepper from './Stepper';
 
-// interface AccountInfoFormProps {
-//   onContinue?: (formData: FormData) => void;
-// }
+
 
 const AccountInfoForm: React.FC<{ onContinue: () => void }> = ({ onContinue }) => {
   const [formData, setFormData] = useState({

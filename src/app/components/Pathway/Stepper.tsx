@@ -6,15 +6,8 @@ const Stepper = () => {
     <div className="flex space-x-4 items-start">
       {/* Sidebar */}
       <div className="flex flex-col w-10 h-50 bg-[#D9D9D970] rounded-full justify-between py-1 px-0.3 items-center">
-        {/* <div className="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center">
-          <Image src="/assets/status/Icon.svg" alt="Completed" width={16} height={16} />
-        </div>
-        <div className="w-2 h-8 bg-gray-200"></div>
-        <div className="w-8 h-8 rounded-full bg-blue-600"></div>
-        <div className="w-2 h-8 bg-gray-200"></div>
-        <div className="w-8 h-8 rounded-full bg-gray-400 flex items-center justify-center">
-          <span className="text-white text-sm">2</span>
-        </div> */}
+        
+     
         <div className="flex flex-col justify-between h-1/2">
             <div className="w-9 h-9 rounded-full flex justify-center items-center bg-[#4bde80] ">
               <div>

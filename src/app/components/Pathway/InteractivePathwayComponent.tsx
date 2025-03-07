@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-
+import Image from "next/image";
 const InteractiveArcPathway = () => {
   const [activeStep, setActiveStep] = useState<string | null>(null); // Fix 1: Explicitly define type
 
@@ -60,7 +60,13 @@ const InteractiveArcPathway = () => {
           >
             {/* Number Image and Text Container */}
             <div className="flex flex-row items-center gap-1">
-              <img src={`/assets/pathway/${step.number}.png`} alt={step.number} className="w-12 h-12" />
+                        <Image 
+              src={`/assets/pathway/${step.number}.png`} 
+              alt={`Step ${step.number}`} 
+              width={48} // Equivalent to w-12 in Tailwind
+              height={48} // Equivalent to h-12 in Tailwind
+              className="w-12 h-12"
+            />
               <span className={`text-lg font-semibold ${activeStep === step.number ? "text-blue-500" : ""}`}>
                 {step.title}
               </span>
